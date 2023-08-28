@@ -29,7 +29,7 @@ const SomeInput = (props) => {
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
-    if (!isEnteredNameValid) {
+    if (!isEnteredNameValid || !isEnteredEmailValid) {
       return;
     }
 
